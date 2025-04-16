@@ -1,0 +1,41 @@
+            <!-- 包裹公司名称和图片 -->
+            <div class="carousel" style="width: 90%; margin: 0 auto;"></div>
+                    <img src="image\introduction\introduction001.png" alt="轮播图片1" class="carousel-image">
+                    <img src="image\introduction\introduction002.png" alt="轮播图片2" class="carousel-image">
+                    <img src="image\introduction\introduction003.png" alt="轮播图片3" class="carousel-image">
+                    <img src="image\introduction\introduction004.png" alt="轮播图片4" class="carousel-image">
+                    <img src="image\introduction\introduction005.png" alt="轮播图片5" class="carousel-image">
+                    <img src="image\introduction\introduction006.png" alt="轮播图片6" class="carousel-image">
+                    <img src="image\introduction\introduction007.png" alt="轮播图片7" class="carousel-image">
+                    <img src="image\introduction\introduction008.png" alt="轮播图片8" class="carousel-image">
+                    <img src="image\introduction\introduction009.png" alt="轮播图片9" class="carousel-image">
+                    <img src="image\introduction\introduction010.png" alt="轮播图片10" class="carousel-image">
+                    <img src="image\introduction\introduction011.png" alt="轮播图片11" class="carousel-image">
+                    <img src="image\introduction\introduction012.png" alt="轮播图片12" class="carousel-image">
+                    <img src="image\introduction\introduction013.png" alt="轮播图片13" class="carousel-image">
+                    <img src="image\introduction\introduction014.png" alt="轮播图片14" class="carousel-image">
+                    <img src="image\introduction\introduction015.png" alt="轮播图片15" class="carousel-image">
+                    <img src="image\introduction\introduction016.png" alt="轮播图片16" class="carousel-image">
+                    <img src="image\introduction\introduction017.png" alt="轮播图片17" class="carousel-image">
+                    <img src="image\introduction\introduction018.png" alt="轮播图片18" class="carousel-image">
+                    <img src="image\introduction\introduction019.png" alt="轮播图片19" class="carousel-image">
+                    <img src="image\introduction\introduction020.png" alt="轮播图片20" class="carousel-image">
+                    <img src="image\introduction\introduction021.png" alt="轮播图片21" class="carousel-image">
+                    <img src="image\introduction\introduction022.png" alt="轮播图片22" class="carousel-image">
+                    <img src="image\introduction\introduction023.png" alt="轮播图片23" class="carousel-image">
+                  <script>
+                    const images = document.querySelectorAll('.carousel-image');
+                    let currentIndex = 0;
+    
+                    function showNextImage() {
+                        images[currentIndex].style.display = 'none';
+                        currentIndex = (currentIndex + 1) % images.length;
+                        images[currentIndex].style.display = 'block';
+                    }
+    
+                    images.forEach((img, index) => {
+                        img.style.display = index === 0 ? 'block' : 'none';
+                    });
+    
+                    setInterval(showNextImage, 3000);
+                  </script>

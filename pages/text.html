@@ -15,10 +15,13 @@
 <body>
     <h1>博客文章 3</h1>
     <p>这是第三篇博客文章的内容。你可以在这里写任何内容。</p>
+    <!-- 添加头像图片 当图片位于上一级目录的时候，图片路径前要添加../ -->
+    <img src="../image/avatar.png" alt="Avatar" style="width: 150px; height: auto;">
 
-    <div style="width: 941px;height: 1597px;margin: 0px auto;">
-        <iframe width="500px" height="380px" src="video/jntdu.webm" frameborder=0 allowfullscreen></iframe>
-    </div>
-
+    <!-- 添加视频播放器 当视频位于上一级目录的时候，图片路径前要添加../-->
+    <video controls style="width: 50%; max-width: 400px; height: auto;">
+        <source src="../video\jntdu.webm" type="video/webm">
+        您的浏览器不支持 HTML 视频。
+    </video>
 </body>
 </html>

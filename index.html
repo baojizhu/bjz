@@ -11,10 +11,14 @@
             font-family: Arial, sans-serif;
         }
         .sidebar {
-            width: 25%;
+            width: 20%;
             background-color: #f4f4f4;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
         }
         .sidebar img {
             width: 100px;
@@ -29,6 +33,8 @@
         .content {
             flex: 1;
             padding: 20px;
+            margin-left: 22%; /* 确保内容部分不会被左侧边栏遮挡 */
+            margin-right: 17%; /* 确保内容部分不会被右侧边栏遮挡 */
         }
         .blog-template {
             border: 1px solid #ddd;
@@ -40,7 +46,7 @@
             background-color: #f9f9f9;
         }
         .right-sidebar {
-            width: 20%;
+            width: 15%;
             background-color: #f4f4f4;
             padding: 20px;
             box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);

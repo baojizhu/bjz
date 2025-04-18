@@ -39,6 +39,31 @@
         .blog-template:hover {
             background-color: #f9f9f9;
         }
+        .right-sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+        .right-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .right-sidebar li {
+            margin-bottom: 15px;
+        }
+        .right-sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .right-sidebar a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -158,8 +183,13 @@
             <p>最后编辑时间：2020年8月10日</p>
         </div>
 </div>
-
-
+<div class="right-sidebar">
+    <ul>
+        <li><a href="https://baojizhu.github.io/HWDM.github.io/">公司网址</a></li>
+        <li><a href="pages/works.html">个人作品</a></li>
+        <li><a href="pages/collections.html">个人收藏</a></li>
+    </ul>
+</div>
     <!-- 
         模板部分：此代码段定义了一个博客文章模板。
         每个模板包含一个标题和简要</div>描述，并通过点击跳转到对应的文章页面。

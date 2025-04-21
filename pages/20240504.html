@@ -6,26 +6,76 @@
     <title>鲍继助的博客</title>
     <style>
         body {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            text-align: center; /* 将所有内容居中 */
+        }
+        .sidebar {
+            width: 15%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-sizing: border-box;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .content {
+            width: 70%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-left: 15%;
+        }
+        .sidebar h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
         }
         video {
             margin-bottom: 20px;
-            border: 5px solid #ccc; /* 添加边框 */
-            border-radius: 10px; /* 圆角边框 */
+            border: 5px solid #ccc;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>💓我的孩子们💓</h1>
-    <video controls width="640">
-        <source src="../video/MP4_20250421_101401VLOG.mp4" type="video/mp4">
-        您的浏览器不支持 HTML 视频。
-    </video>
-    <p>家庭是人生的港湾，孩子是生命的延续。在成长的旅途中，孩子们的欢笑与泪水，构成了生活中最美好的画面。每一个小小的进步，都是他们努力的见证；每一次跌倒，都是他们成长的阶梯。</p>
-    <p>作为父母，我们见证了他们从蹒跚学步到独立思考的每一个瞬间。孩子们的纯真与好奇心，让我们重新审视这个世界的美好。他们的成长不仅是他们的旅程，也是我们作为父母的一次次蜕变。</p>
-    <p>在这个快节奏的时代，陪伴显得尤为珍贵。无论是一起玩耍的时光，还是共同面对挑战的时刻，都是我人生中最珍贵的回忆。愿所有的孩子都能在爱与支持中茁壮成长。</p>
+    <div class="sidebar" style="background: url('../image/20240504/1745209659392.jpg') no-repeat center center; background-size: cover;">
+        <ul>
+            <li><a href="..\index.html" style="color: white; text-shadow: 1px 1px 2px black;">返回主页</a></li>
+        </ul>
+    </div>
+    <div class="content" style="text-align: center;">
+        <h1>💓我的孩子们💓</h1>
+        <div style="display: flex; justify-content: center;">
+            <video controls width="640">
+            <source src="../video/MP4_20250421_101401VLOG.mp4" type="video/mp4">
+            您的浏览器不支持 HTML 视频。
+            </video>
+        </div>
+        <p>💖家庭是人生的港湾，孩子是生命的延续💖。</p>
+        <p>🌟在成长的旅途中，孩子们的欢笑与泪水，构成了生活中最美好的画面🌟。</p>
+        <p>✨每一个小小的进步，都是他们努力的见证；每一次跌倒，都是他们成长的阶梯✨。</p>
+        <p>💞作为父母，我们见证了他们从蹒跚学步到独立思考的每一个瞬间💞。</p>
+        <p>🌈孩子们的纯真与好奇心，让我们重新审视这个世界的美好🌈。</p>
+        <p>💝他们的成长不仅是他们的旅程，也是我们作为父母的一次次蜕变💝。</p>
+        <p>⏳在这个快节奏的时代，陪伴显得尤为珍贵⏳。</p>
+        <p>💎无论是一起玩耍的时光，还是共同面对挑战的时刻，都是我人生中最珍贵的回忆💎。</p>
+        <p>🌹愿所有的孩子都能在爱与支持中茁壮成长🌹。</p>
+    </div>
+    <div class="sidebar" style="right: 0; left: auto; background: url('../image/20240504/1745209713831.jpg') no-repeat center center; background-size: cover; width: 15%; position: fixed; height: 100%; overflow-y: auto;">
+        <h2 style="color: white; text-shadow: 1px 1px 2px black;">快速直达</h2>
+        <ul>
+            <li><a href="20240503.html" style="color: white; text-shadow: 1px 1px 2px black;">上一个博客</a></li>
+            <li><a href="..\pages\YBTX.html" style="color: white; text-shadow: 1px 1px 2px black;">下一个博客</a></li>
+        </ul>
+    </div>
 </body>
 </html>

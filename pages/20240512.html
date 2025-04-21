@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲍继助的博客</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .sidebar {
+            width: 15%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-sizing: border-box;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .content {
+            width: 70%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-left: 15%;
+        }
+        .sidebar h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        video {
+            margin-bottom: 20px;
+            border: 5px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 左侧边栏设置，背景图片为指定路径 -->
+    <div class="sidebar" style="background: url('../image/20240512/side.jpg') no-repeat center center; background-size: cover;">
+        <ul>
+            <li><a href="..\index.html" style="color: white; text-shadow: 1px 1px 2px black;">返回主页</a></li>
+        </ul>
+    </div>
+    <!-- 博客正文内容 -->
+    <div class="content" style="text-align: center;">
+        <h1>🥩这世间，唯美食不可辜负🥩</h1>
+        <div style="display: flex; justify-content: center;">
+            <video controls width="640">
+            <source src="../image/20240512/MP4_20250421_163538VLOG.mp4" type="video/mp4">
+            您的浏览器不支持 HTML 视频。
+            </video>
+        </div>
+        <div style="text-align: center;">
+            <p>🍳厨房的烟火气，是生活最真实的模样🍳。</p>
+            <p>🍔每一口美食，都是对生活的热爱🍔。</p>
+            <p>🍇果茶四溢的香气，扫去我一天的疲惫🍇。</p>
+            <p>🍜热腾腾的面条，是我的最爱🍜。</p>
+            <p>🍩甜点的香气，总能治愈我老婆疲惫的心灵🍩。</p>
+            <p>🍖烧烤的滋味，是夏夜最美的记忆🍖。</p>
+            <p>🍵一杯清茶，品味岁月的沉淀🍵。</p>
+            <p>🍂生活如同美食，需要用心去品味🍂。</p>
+            <p>🌟愿我们在每一餐中，找到生活的美好🌟。</p>
+            <p><strong><em>ps,第一次卤肉，并不是很成功，好在老婆孩子还有我的老母亲都很给力，一直都是夸奖（￣︶￣）↗　，生活就是这样，无法尽善尽美，但是因为有爱所以一切的不完美都是恰到好处的完美🍾</em></strong></p>
+        </div>
+    </div>
+    <!-- 右侧边栏设置 -->
+    <div class="sidebar" style="right: 0; left: auto; background: url('../image/20240512/side.jpg') no-repeat center center; background-size: cover; width: 15%; position: fixed; height: 100%; overflow-y: auto;">
+        <h2 style="color: white; text-shadow: 1px 1px 2px black;">快速直达</h2>
+        <ul>
+            <li><a href="..\pages\20240530.html" style="color: white; text-shadow: 1px 1px 2px black;">上一个博客</a></li>
+            <li><a href="..\pages\20240512.html" style="color: white; text-shadow: 1px 1px 2px black;">下一个博客</a></li>
+        </ul>
+    </div>
+</body>
+</html>

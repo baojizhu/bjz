@@ -1,4 +1,28 @@
 <!DOCTYPE html>
+<style>
+    .top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    .top-bar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    body {
+        margin-top: 50px; /* Adjust for the fixed top bar */
+    }
+</style>
+<div class="top-bar">
+    <a href="../index.html">返回主页</a>
+</div>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +37,9 @@
     </style>
 </head>
 <body>
-    <h1>🚀常用工具软件🚀</h1>
+    <div style="margin-top: 60px;">
+        <h1>🚀常用工具软件🚀</h1>
+    </div>
     <div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
         <p>电脑操控手机的软件QtScrcpy，QT版本，具有更好的可开发性。官网地址：<a href="https://gitee.com/Barryda/QtScrcpy/releases" target="_blank">https://gitee.com/Barryda/QtScrcpy/releases</a></p>
         <p><a href="../tool/QtScrcpy-win-x64-v3.1.3.zip" download>电脑操控手机工具：QtScrcpy-win-x64-v3.1.3.zip</a></p>

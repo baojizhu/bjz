@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为 HTML5 -->
+<html>
+<!-- 定义 HTML 文档的根元素 -->
+<head>
+  <!-- 定义文档的头部，包含元信息和外部资源 -->
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <!-- 引入 Babylon.js 库，用于创建和渲染 3D 场景 -->
+  <style> #renderCanvas { width: 100%; height: 90vh; } </style>
+  <!-- 定义样式，设置渲染画布的宽度为 100%，高度为视口高度的 90% -->
+</head>
+<body>
+  <!-- 定义 HTML 文档的主体内容 -->
+  <canvas id="renderCanvas"></canvas>
+  <!-- 定义一个画布元素，ID 为 renderCanvas，用于渲染 3D 场景 -->
+  <script>
+    // 定义一个函数，用于创建和初始化 3D 场景
+    const createScene = () => {
+      const scene = new BABYLON.Scene(engine);
+      // 创建一个 Babylon.js 场景对象，使用引擎实例
+
+      BABYLON.SceneLoader.ImportMesh("", "model/", "scene.glb", scene, (meshes) => {
+        // 加载 3D 模型文件 "scene.glb" 并将其导入到场景中
+        scene.createDefaultEnvironment();
+        // 创建默认的环境（如光照、地面等）
+        scene.activeCamera.attachControl(canvas, true);
+        // 将活动摄像机与画布绑定，允许用户通过鼠标或触摸控制摄像机
+      });
+
+      return scene;
+      // 返回创建的场景对象
+    };
+
+    const engine = new BABYLON.Engine(canvas, true);
+    // 创建 Babylon.js 引擎实例，绑定到画布元素，并启用抗锯齿
+
+    window.addEventListener('resize', () => engine.resize());
+    // 添加窗口大小调整事件监听器，在窗口大小变化时调整引擎的渲染尺寸
+
+    BABYLON.Engine.CodecPackage = "https://preview.babylonjs.com/babylon.ktx2Decoder.js";
+    // 设置 Babylon.js 的解码器包，用于支持 KTX2 纹理格式
+
+    createScene();
+    // 调用 createScene 函数，创建并初始化 3D 场景
+  </script>
+</body>
+</html>
